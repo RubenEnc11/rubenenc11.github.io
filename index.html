@@ -1,9 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rubén Encinas Moreno – Data Engineer Portfolio</title>
+
   <meta name="description" content="Portfolio of Rubén Encinas Moreno, AWS Certified Data Engineer – Associate. Projects in ETL, data warehousing, AWS, SQL, Python, and analytics.">
   <meta name="author" content="Rubén Encinas Moreno">
   <meta property="og:title" content="Rubén Encinas Moreno – Data Engineer Portfolio">
@@ -11,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rubenenc11.github.io">
   <meta name="theme-color" content="#0a0a0a">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%233b82f6'/></svg>'>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%233b82f6'/></svg>'">
 
   <style>
     :root{--bg:#0b0c10;--card:#111218;--muted:#c9c9cf;--text:#f5f7fb;--brand:#3b82f6;--brand-2:#06b6d4;--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px}
@@ -51,20 +52,17 @@
     .footer{color:var(--muted);font-size:14px;text-align:center;padding:28px;border-top:1px solid rgba(255,255,255,.08)}
   </style>
 
-  <!-- JSON-LD: this must be inside a script tag so it doesn't render as text -->
+  <!-- JSON-LD (SEO). Mantener dentro del script para que no aparezca en pantalla -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Rubén Encinas Moreno",
-      "url": "https://rubenenc11.github.io",
-      "jobTitle": "Data Engineer",
-      "description": "AWS Certified Data Engineer – Associate. Builds data pipelines, warehouses, ETL and analytics on AWS.",
-      "sameAs": [
-        "https://github.com/RubenEnc11",
-        "https://www.linkedin.com/in/ruben-encinas"
-      ]
-    }
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Rubén Encinas Moreno",
+    "url":"https://rubenenc11.github.io",
+    "jobTitle":"Data Engineer",
+    "description":"AWS Certified Data Engineer – Associate. Builds data pipelines, warehouses, ETL and analytics on AWS.",
+    "sameAs":["https://github.com/RubenEnc11","https://www.linkedin.com/in/ruben-encinas"]
+  }
   </script>
 </head>
 <body>
@@ -111,6 +109,7 @@
         </div>
         <p><a href="https://github.com/RubenEnc11/covid19-etl" target="_blank" rel="noopener">Repository →</a></p>
       </article>
+
       <article class="proj card">
         <h3>RDS ↔ QuickSight (Secure VPC)</h3>
         <p>Provisioned MySQL on Amazon RDS, secured via VPC + security groups; connected to QuickSight. Documented least-privilege IAM and network design.</p>
@@ -121,6 +120,7 @@
         </div>
         <p><a href="https://github.com/RubenEnc11/aws-rds-quicksight" target="_blank" rel="noopener">Repository →</a></p>
       </article>
+
       <article class="proj card">
         <h3>Aurora + EC2 Connectivity</h3>
         <p>Built an Amazon Aurora (MySQL-compatible) cluster and connected it securely from EC2. Covered endpoints, security groups, and connectivity validation.</p>
