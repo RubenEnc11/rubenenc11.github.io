@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rubén Encinas Moreno – Data Engineer Portfolio</title>
-
   <meta name="description" content="Portfolio of Rubén Encinas Moreno, AWS Certified Data Engineer – Associate. Projects in ETL, data warehousing, AWS, SQL, Python, and analytics.">
-  <meta name="author" content="Rubén Encinas Moreno">
-  <meta property="og:title" content="Rubén Encinas Moreno – Data Engineer Portfolio">
-  <meta property="og:description" content="Projects in ETL, AWS, SQL, and analytics.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rubenenc11.github.io">
   <meta name="theme-color" content="#0a0a0a">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%233b82f6'/></svg>'">
 
   <style>
     :root{--bg:#0b0c10;--card:#111218;--muted:#c9c9cf;--text:#f5f7fb;--brand:#3b82f6;--brand-2:#06b6d4;--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
     .container{max-width:1100px;margin:0 auto;padding:24px}
-
-    /* NAV */
     .nav{position:sticky;top:0;backdrop-filter:blur(6px);background:rgba(11,12,16,.75);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:12px;flex-wrap:wrap}
     .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
     .brand .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
-    nav a.btn{border:1px solid rgba(255,255,255,.12);padding:8px 14px;border-radius:12px;margin-left:8px;touch-action:manipulation}
-
-    /* HERO */
+    nav a.btn{border:1px solid rgba(255,255,255,.12);padding:8px 14px;border-radius:12px;margin-left:8px}
     .hero{display:grid;grid-template-columns:1fr;gap:16px;padding:48px 24px 12px}
     .title{font-size:clamp(28px,4vw,44px);font-weight:700;margin:8px 0 12px}
     .subtitle{color:var(--muted);font-size:clamp(16px,2vw,18px);max-width:720px}
@@ -37,33 +24,13 @@
     .btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#061018;border:none;padding:12px 16px;border-radius:14px;font-weight:700;box-shadow:var(--shadow)}
     .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.14);color:var(--text);padding:12px 16px;border-radius:14px}
     .pill{display:inline-flex;align-items:center;background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.35);padding:8px 12px;border-radius:999px;font-size:14px;color:var(--text);margin-right:8px;margin-top:8px}
-
-    /* SECTIONS */
-    .section{padding:36px 24px}
-    .section h2{font-size:clamp(22px,3vw,28px);margin:0 0 16px}
+    .section{padding:36px 24px} .section h2{font-size:clamp(22px,3vw,28px);margin:0 0 16px}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
     .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-    .proj{display:grid;gap:10px}
-    .proj h3{margin:0;font-size:18px}
-    .meta{display:flex;gap:8px;flex-wrap:wrap}
-    .badge{font-size:12px;color:var(--muted);border:1px solid rgba(255,255,255,.12);padding:4px 8px;border-radius:999px}
-
-    /* FOOTER */
+    .proj{display:grid;gap:10px} .proj h3{margin:0;font-size:18px}
+    .meta{display:flex;gap:8px;flex-wrap:wrap} .badge{font-size:12px;color:var(--muted);border:1px solid rgba(255,255,255,.12);padding:4px 8px;border-radius:999px}
     .footer{color:var(--muted);font-size:14px;text-align:center;padding:28px;border-top:1px solid rgba(255,255,255,.08)}
   </style>
-
-  <!-- JSON-LD (SEO). Mantener dentro del script para que no aparezca en pantalla -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Rubén Encinas Moreno",
-    "url":"https://rubenenc11.github.io",
-    "jobTitle":"Data Engineer",
-    "description":"AWS Certified Data Engineer – Associate. Builds data pipelines, warehouses, ETL and analytics on AWS.",
-    "sameAs":["https://github.com/RubenEnc11","https://www.linkedin.com/in/ruben-encinas"]
-  }
-  </script>
 </head>
 <body>
   <!-- NAV -->
@@ -102,32 +69,23 @@
         <h3>COVID-19 ETL (Python → PostgreSQL)</h3>
         <p>Automated ingestion and cleaning of Mexico COVID-19 data. Loaded to PostgreSQL via Docker; queried with SQL for validation and exploration.</p>
         <div class="meta">
-          <span class="badge">Python</span>
-          <span class="badge">SQL</span>
-          <span class="badge">PostgreSQL</span>
-          <span class="badge">Docker</span>
+          <span class="badge">Python</span><span class="badge">SQL</span><span class="badge">PostgreSQL</span><span class="badge">Docker</span>
         </div>
         <p><a href="https://github.com/RubenEnc11/covid19-etl" target="_blank" rel="noopener">Repository →</a></p>
       </article>
-
       <article class="proj card">
         <h3>RDS ↔ QuickSight (Secure VPC)</h3>
         <p>Provisioned MySQL on Amazon RDS, secured via VPC + security groups; connected to QuickSight. Documented least-privilege IAM and network design.</p>
         <div class="meta">
-          <span class="badge">AWS</span>
-          <span class="badge">RDS (MySQL)</span>
-          <span class="badge">QuickSight</span>
+          <span class="badge">AWS</span><span class="badge">RDS (MySQL)</span><span class="badge">QuickSight</span>
         </div>
         <p><a href="https://github.com/RubenEnc11/aws-rds-quicksight" target="_blank" rel="noopener">Repository →</a></p>
       </article>
-
       <article class="proj card">
         <h3>Aurora + EC2 Connectivity</h3>
         <p>Built an Amazon Aurora (MySQL-compatible) cluster and connected it securely from EC2. Covered endpoints, security groups, and connectivity validation.</p>
         <div class="meta">
-          <span class="badge">AWS</span>
-          <span class="badge">Aurora</span>
-          <span class="badge">EC2</span>
+          <span class="badge">AWS</span><span class="badge">Aurora</span><span class="badge">EC2</span>
         </div>
         <p><a href="https://github.com/RubenEnc11/aurora-ec2" target="_blank" rel="noopener">Repository →</a></p>
       </article>
