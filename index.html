@@ -28,7 +28,19 @@
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
     .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
     .proj{display:grid;gap:10px} .proj h3{margin:0;font-size:18px}
-    .meta{display:flex;gap:8px;flex-wrap:wrap} .badge{font-size:12px;color:var(--muted);border:1px solid rgba(255,255,255,.12);padding:4px 8px;border-radius:999px}
+    .meta{display:flex;flex-wrap:wrap;gap:8px}
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-size:12px;
+      line-height:1;
+      color:var(--muted);
+      border:1px solid rgba(255,255,255,.12);
+      padding:6px 10px;
+      border-radius:999px;
+      white-space:nowrap;
+    }
     .footer{color:var(--muted);font-size:14px;text-align:center;padding:28px;border-top:1px solid rgba(255,255,255,.08)}
   </style>
 </head>
@@ -106,7 +118,7 @@
     <div class="grid">
       <div class="card"><h3>Programming</h3><p>Python (Pandas), SQL</p></div>
       <div class="card"><h3>Databases</h3><p>MySQL, PostgreSQL, IBM Db2</p></div>
-      <div class="card"><h3>Cloud & Infastructure</h3><p>AWS (S3, Glue, Redshift, Lambda, Kinesis, IAM, Athena), Docker</p></div>
+      <div class="card"><h3>Cloud & Infastructure</h3><p>AWS, Snowflake, Docker</p></div>
       <div class="card"><h3>Visualization</h3><p>Amazon QuickSight, Google Looker, IBM Cognos</p></div>
       <div class="card"><h3>Version Control</h3><p>Git</p></div>
       <div class="card"><h3>Familiar with</h3><p>MongoDB, Cassandra, Airflow, Kafka, Spark, Hadoop</p></div>
